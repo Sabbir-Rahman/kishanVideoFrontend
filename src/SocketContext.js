@@ -33,7 +33,7 @@ const ContextProvider = ({children}) => {
         })
     },[])
 
-    const anserCall = () => {
+    const answerCall = () => {
         setCallAccepted(true)
         
         const peer = new Peer({ initiator: false, trickle: false, stream})
@@ -93,7 +93,7 @@ const ContextProvider = ({children}) => {
             me,
             callUser,
             leaveCall,
-            anserCall,
+            answerCall
         }}>
             {children}
         </SocketContext.Provider>

@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
 
 
 const Options = ({ children }) => {
-    const { me, callAccepted, name, setName, callEnded, leaveCall, callUSer} = useContext(SocketContext)
+    const { me, callAccepted, name, setName, callEnded, leaveCall, callUser} = useContext(SocketContext)
     const [idToCall, setIdToCall ] = useState('')
     const classes = useStyles()
 
@@ -94,7 +94,7 @@ const Options = ({ children }) => {
                     color="primary"
                     startIcon={<Phone fontSize="large" />}
                     fullWidth
-                    onClick={() => callUSer(idToCall)}
+                    onClick={() => callUser(idToCall)}
                     className={classes.margin}
                   >
                     Call

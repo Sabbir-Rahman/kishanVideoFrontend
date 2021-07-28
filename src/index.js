@@ -1,7 +1,13 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from "react";
+import ReactDOM from "react-dom";
 
-import App from './App'
-import './styles.css'
-
-ReactDOM.render(<App/>, document.getElementById('root'))
+import App from "./App";
+import "./styles.css";
+import { ContextProvider } from "./SocketContext";
+ReactDOM.render(
+    <ContextProvider>
+        <App />
+    </ContextProvider>,
+     
+    document.getElementById("root")
+);

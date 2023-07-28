@@ -4,7 +4,7 @@ import Peer from 'simple-peer'
 
 const SocketContext = createContext()
 
-const socket = io("https://video-call-rahman.herokuapp.com/");
+const socket = io("https://medibee.app/", { path: '/kishan/video/'});
 
 const ContextProvider = ({children}) => {
 
